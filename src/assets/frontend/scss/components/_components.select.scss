@@ -1,0 +1,90 @@
+/* select start */
+@use "../settings" as *;
+.customSelect {
+  // Styling for the main select control
+  &__control {
+    border-radius: 12px;
+    background: color(900);
+    border-color: color(900);
+    box-shadow: none;
+    height: 40px;
+    padding: 0px 10px;
+    &.customSelect__control--is-focused,
+    &.customSelect__control--is-focused:hover {
+      border-color: color(900);
+    }
+    &:hover {
+      border-color: transparent;
+    }
+    // Styling for the main select control
+  &--menu-is-open{
+    .customSelect__dropdown-indicator {
+      color: color(900);   
+     transform: rotate(180deg);
+ 
+     }
+   }
+  }
+  // Dropdown indicator (arrow icon)
+  &__dropdown {
+    &-indicator {
+      color:color(900);        
+     transition: all .3s;
+     svg{
+      width: 20px;
+      height: 20px;
+     }
+    }
+  }
+  &__value {
+    &-container {
+      padding-left: 0;
+      padding-top: 8px;
+    }
+  }
+  &__input{
+    &-container{
+      padding-top: 8px;
+      margin: 0;
+      color: color(50);
+    }
+  }
+  &__single {
+    &-value {
+      font-size: 14px;      
+      margin: 0;
+      color: color(900);      
+    }
+  }
+  &__option {
+    &--is-focused {
+      background-color: color(900);
+    }
+    &--is-selected {
+      background-color: color(900);
+      color: color(900);
+    }
+    &:active {
+      background-color: color(900);
+      color: color(900);
+    }
+  }
+  &__menu {
+    box-shadow: 0px 2px 8px 0px color(900);
+    border-radius: 5px;
+    z-index: 3;
+    &-list{
+      z-index: 1;
+      padding: 0;
+    }
+  }
+  &__placeholder {
+    color: #c2c9c6 !important;
+    margin: 0;
+    font-size: 14px;
+  }
+  &__indicator-separator {
+    display: none;
+  }
+}
+/* select end */

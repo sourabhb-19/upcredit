@@ -1,0 +1,4 @@
+@use "mixins" as *;  // ✅ Import mixins from settings/_mixin.scss
+@use "variables" as *;  // ✅ Import variables if needed
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+

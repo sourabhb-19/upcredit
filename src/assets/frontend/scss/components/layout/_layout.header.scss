@@ -1,0 +1,35 @@
+// Header CSS Start
+@use "../../settings" as *;
+
+.header{
+    .navbar-brand{width:150px;}
+    .navbar{
+       
+            .nav-link{
+                color:#3a3b3b;font-weight: 500; position: relative;
+                padding:0;
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background: color(500); 
+                    bottom: -5px;
+                    left: 0;    
+                    transition: width 0.3s ease;
+                }
+                &:hover{
+                    color: color(500);
+                    &::before{
+                        width: 30px;
+                    }
+                }
+            }
+        
+    }
+    
+
+}

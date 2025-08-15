@@ -1,0 +1,42 @@
+@use "sass:map";
+
+// color variables
+$colors: (
+  50:  #ffffff,
+  100:  #4c4d4d,
+  500: #FF6349,
+  600: #0086AF,
+  700: #FED54D,
+  800: #1E1E20,
+  900: #000000,
+);
+
+@function color($color) {
+  // checking to see if our $theme-colors map has that $color key
+  @if map.has-key($colors, $color) {
+    // and if so, it will get that color for us in the map-get syntax
+    @return map.get($colors, $color);
+  }
+  // if not, it will give us a helpful error when we compile
+  @error "Unknown `#{$color}` in $colors.";
+  @return null;
+}
+
+
+
+
+
+// fields height variable
+$field-height:45px; // field height
+$field-height-xl:40px;  // field height responsive xl
+$field-height-lg:35px;  // field height responsive lg
+$field-height-md:30px; // field height responsive md
+
+// fields padding variable
+$field-padding:10px 20px; //field padding
+$field-padding-xl:10px;  //field height responsive xl
+$field-padding-lg:6px 10px;  //field height responsive lg
+
+
+$imageurl: "../../frontend/images";
+$fonturl: "../../frontend/fonts";
