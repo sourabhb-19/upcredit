@@ -9,11 +9,11 @@ export default function FinancialFeture (){
             <section className="financialFeture py-60">
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={5}>
-                            <Image source="home/disputebeast-aicreditrepair.webp" alt="Financial feture" className="img-fluid" imageFor="frontend" />
+                        <Col md={5} >
+                            <Image source="home/disputebeast-aicreditrepair.webp" alt="Financial feture" className="img-fluid d-none d-md-block" imageFor="frontend" />
                         </Col>
-                        <Col lg={7}>
-                            <div className="commonHeading  mb-0">
+                        <Col md={7}>
+                            <div className="commonHeading mt-2 mt-md-0  mb-0">
                                 <span className="financialFeture_tag">Rated 4.78 Stars by 1,700+ Users</span>
                                 <h2 className="commonHeading_title mt-3">Get your <span>financial future</span> secured with Dispute Beast</h2>
                                 <p className="commonHeading_cnt text-white">Take the first step towards a better financial future today. You deserve financial freedom because you’re more than a credit score and Dispute Beast is here to help you achieve it.</p>

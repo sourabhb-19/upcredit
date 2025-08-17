@@ -80,12 +80,12 @@ export function Footer() {
                         </Row>
                     </div>
                     <div className="footer-bottom">
-                        <div className="d-flex justify-content-between align-items-center">
+                        <div className="d-md-flex justify-content-between align-items-center">
                             <p className=" mb-0">© {year} UPCREDIT. All rights reserved.</p>
-                            <ul className="list-unstyled d-flex mb-0">
-                                <li className="mx-2"><Link to="#!">Security</Link></li>
-                                <li className="mx-2"><Link to="#!">Privacy Policy</Link></li>
-                                <li className="mx-2"><Link to="#!">Terms of Service</Link></li>
+                            <ul className="list-unstyled d-flex  mb-0">
+                                <li className="mx-md-2 mx-1"><Link to="#!">Security</Link></li>
+                                <li className="mx-md-2 mx-1"><Link to="#!">Privacy Policy</Link></li>
+                                <li className="mx-md-2 mx-1"><Link to="#!">Terms of Service</Link></li>
                             </ul>
                         </div>
                     </div>

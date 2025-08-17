@@ -40,14 +40,14 @@ export default function MoneyBack() {
             </h2>
             <p>
               We believe in the quality of our products. If you’re not satisfied,
-              we will return 110% (yes, 110!) <br /> back of your money if Dispute Beast
+              we will return 110% (yes, 110!) <br className="d-none d-md-block" /> back of your money if Dispute Beast
               doesn’t help you improve your credit after a year.
             </p>
           </div>
 
-          <Row className="text-center">
+          <Row className="text-center gy-3">
             {cards.map((card, index) => (
-              <Col lg={4} key={index}>
+              <Col md={4} key={index}>
                 <div className="moneyBack_card">
                   <div className="icon mb-3">
                     <Image

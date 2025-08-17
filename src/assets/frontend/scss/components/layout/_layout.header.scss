@@ -2,34 +2,74 @@
 @use "../../settings" as *;
 
 .header{
-    .navbar-brand{width:150px;}
     .navbar{
-       
-            .nav-link{
-                color:#3a3b3b;font-weight: 500; position: relative;
-                padding:0;
-                &:not(:last-child){
-                    margin-right: 20px;
-                }
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 2px;
-                    background: color(500); 
-                    bottom: -5px;
-                    left: 0;    
-                    transition: width 0.3s ease;
-                }
-                &:hover{
-                    color: color(500);
-                    &::before{
-                        width: 30px;
-                    }
+        &-brand{width:150px;}
+        .nav-link{
+            color:#3a3b3b;font-weight: 500; position: relative;
+            padding:0;
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: color(500); 
+                bottom: -5px;
+                left: 0;    
+                transition: width 0.3s ease;
+            }
+            &:hover{
+                color: color(500);
+                &::before{
+                    width: 30px;
                 }
             }
-        
+        }
     }
     
+    @include media-breakpoint-down(xl){
+        .navbar{
+            &-brand{width:120px;}
+            .nav-link{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        .navbar{
+            &-toggler{
+                padding: 0;    border: 0;    margin-left: 5px;
+                &:focus{box-shadow: none;}
+            }
+            &-nav{padding-top: 10px;}
+            .nav-link:not(:last-child){
+                margin-right: 0;margin-bottom: 5px;
+            }
+        }
+        &_action{
+            .nav-link{margin-bottom: 0 !important;}
+            .btn-primary{margin-left: 10px;}
+        }
+    }
+    @include media-breakpoint-down(md){
+        .navbar{
+            &-brand{padding:0;width: 95px;}
+            &-toggler-icon{
+                width: 26px; height: 26px;
+            }
+        }
+        &_action{
+            .btn{
+                height: 30px;
+                padding: 6px 10px;
+                font-size: 13px;
+            }
+        }
+    }
 
 }

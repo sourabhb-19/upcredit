@@ -9,13 +9,17 @@ export function Header() {
     <header className="header w-100" >           
         <Navbar expand="lg" bg="transparent" data-bs-theme="light" > 
             <Container fluid>           
-                <Navbar.Brand className="me-4">
+                <Navbar.Brand className="me-0 me-md-4">
                     <Link to={frontendRouteMap.HOME.path} as={Nav.link} >
                         <Image source="logo.png" alt="Logo" className="img-fluid" imageFor="frontend" />    
                     </Link>
                 </Navbar.Brand>
+                <div className="ms-auto d-flex align-items-center header_action order-lg-2">
+                    <Link to={frontendRouteMap.LOGIN.path} className="nav-link ">Login</Link>
+                    <Link  to={frontendRouteMap.SIGNUP.path} className="btn btn-primary">Get Started</Link>
+                </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className="order-lg-1">
                     <Nav>
                         <Link to="#!" className="nav-link">Pricing</Link>
                         <Link to="#!" className="nav-link">Reviews</Link>
@@ -25,10 +29,7 @@ export function Header() {
                         <Link to="#!" className="nav-link">Blog</Link>                       
                     </Nav>
                 </Navbar.Collapse>  
-                <div className="ms-auto d-flex align-items-center header_action">
-                    <Link to={frontendRouteMap.LOGIN.path} className="nav-link ">Login</Link>
-                    <Link  to={frontendRouteMap.SIGNUP.path} className="btn btn-primary">Get Started</Link>
-                </div>
+                
             </Container>          
         </Navbar>          
     </header>   

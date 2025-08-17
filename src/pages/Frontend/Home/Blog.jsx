@@ -29,10 +29,10 @@ export default function Blog (){
                 <Container>
                     <div className="commonHeading text-center">
                         <h2 className="commonHeading_title text-dark">
-                            Learn all about <span>Dispute Beast's AI</span> to <br /> help elevate your finances
+                            Learn all about <span>Dispute Beast's AI</span> to <br className="d-none d-md-block" /> help elevate your finances
                         </h2>
                     </div>
-                    <Row>
+                    <Row className="g-3">
                         {
                             blog.map((item, index) => (
                                 <Col md={4} key={index}>

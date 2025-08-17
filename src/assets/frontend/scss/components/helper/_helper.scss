@@ -39,6 +39,12 @@ a {
   }
 }
 
+.container{
+  @include media-breakpoint-down(xl){
+    max-width: 100%;
+  }
+}
+
 .link-primary {
   color: color(500) !important;
   transition: all 0.5s;
@@ -55,6 +61,13 @@ a {
 .py-60 {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include media-breakpoint-down(xl){
+    padding-top: 40px;padding-bottom: 40px;
+  }
+  @include media-breakpoint-down(lg){
+    padding-top: 30px;padding-bottom: 30px;
+  }
 }
 
 // video modal
@@ -84,7 +97,6 @@ a {
 // common heading
 .commonHeading {
   margin-bottom: 40px;
-
   &_title {
     font-size: 38px;
     font-weight: bold;
@@ -99,5 +111,17 @@ a {
     margin-top: 10px;
     color:#4c4d4d;
     margin-bottom: 0;
+  }
+  @include media-breakpoint-down(xl){
+    margin-bottom: 30px;
+    &_title{font-size: 32px;}
+    &_cnt{font-size: 16px; }
+  }
+  @include media-breakpoint-down(lg){
+    &_title{font-size: 28px;}
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom: 20px;
+    &_title{font-size: 24px; margin-bottom: 0;}
   }
 }
