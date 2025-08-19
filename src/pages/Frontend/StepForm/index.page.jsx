@@ -2,6 +2,9 @@ import { Container } from "react-bootstrap"
 import Step1 from "./Step1";
 import { useState } from "react";
 import Step2 from "./Step2";
+import Step3 from "./Step3";
+import Step4 from "./Step4";
+import { Image } from "../../../components/CommonElement";
 
 export default function StepForm() {
   const [currentStep, setCurrentStep] = useState(1);  
@@ -17,8 +20,13 @@ export default function StepForm() {
   ];
   return (
     <main className="stepForm">
+      <div className="stepForm_header bg-white py-2 mb-4">
+        <Container>
+          <Image source="logo.png" alt="logo" width="150" imageFor="frontend" />
+        </Container>
+      </div>
       <Container>
-        <div className="d-flex align-items-center justify-content-center py-3">
+        <div className="d-flex align-items-center justify-content-center mb-4">
         {steps.map((step, index) => (
           <div key={step.number} className="stepForm_wrapper d-flex align-items-center">
             <div
@@ -50,6 +58,8 @@ export default function StepForm() {
         <div  className="stepForm_content mx-auto">
           {currentStep === 1 && <Step1 handleNextStep={handleNextStep} /> }
           {currentStep === 2 && <Step2 handleNextStep={handleNextStep} /> }
+          {currentStep === 3 && <Step3 handleNextStep={handleNextStep} /> }
+          {currentStep === 4 && <Step4 handleNextStep={handleNextStep} /> }
         </div>
       </Container>
     </main>

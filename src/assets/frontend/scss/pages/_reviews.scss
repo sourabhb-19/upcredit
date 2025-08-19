@@ -1,0 +1,83 @@
+
+@use "../settings" as *;
+
+.reviewsPage{
+    
+    // user reviews
+    .userReviews{
+        &_grid {
+            column-count: 3;   /* 3 columns */
+            column-gap: 20px;  /* gap between columns */
+        }
+        &_card{
+            position: relative;
+            z-index: 3;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.60);
+            box-shadow: 0 0 8px 2px rgba(0,0,0,0.06);
+            margin-bottom: 20px;
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            .profile-thumb {
+                border-radius: 6px;
+                width: 80px;height: 80px;
+                overflow: hidden;
+                img{width: 100%;height: 100%;object-fit: cover;}
+            }
+            .content {
+                .title{
+                    font-size: 20x;
+                    font-weight: 500;
+                }
+                p {
+                    color:color(100) ;
+                }
+            }
+        }
+        &-body {
+            position: relative;
+            margin-top: 15px;
+            .desc {
+                margin-top: 10px;
+            }
+        }
+        .rating{
+            em{
+                font-size: 16px;color:color(500);
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .quote-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+
+    // faq
+    .faq{
+        .accordion{
+            max-width: 800px;border: 0;border-radius: 0;
+            &-item{
+                border-left: 0;border-right: 0;
+            }
+            &-button{
+                &:focus{box-shadow: none;}
+                &:not(.collapsed){
+                    background-color: transparent;color:color(500);
+                    box-shadow: none;
+                }
+            }
+            &-body{
+                color:color(100);padding-left: 35px;
+            }
+        }
+    }
+}

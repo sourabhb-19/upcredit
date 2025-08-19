@@ -1,6 +1,13 @@
 @use "../settings" as *;
 
 .stepForm {
+  background-color: #f7f7f7; min-height: 100vh;
+  padding-bottom:30px;
+  &_head{
+    margin-bottom: 30px;
+    .title{font-size: 24px;}
+    p{color: color(100); margin-bottom: 0;}
+  }
   &_circle {
     width: 28px;
     height: 28px;
@@ -19,6 +26,7 @@
 
     &.completed {
       background-color: color(700); 
+      color:#272626;
       + .stepForm_label {
         color: color(900);
       }
@@ -45,7 +53,57 @@
     margin: 0 8px;
   }
   &_content{
-    max-width: 800px; margin-top: 30px;
+    max-width: 800px; 
+    background-color: color(50);
+    padding:40px;
     .btn-primary{min-width: 200px;}
   }
+
+  .paymentInfo{
+    &_scores{
+      border-bottom:1px solid #e2e1e1;padding-bottom: 8px;margin-bottom: 8px;
+      max-width: 500px;
+      .txt{color:#6b7280;font-size: 14px;}
+      span{
+        background-color: #a3faa3; color:green;
+        padding:5px 10px;font-size: 12px; border-radius: 5px;
+      }
+    }
+    &_cards{
+      input{display: none;}
+      label{
+        padding:10px 20px;background-color: #e2e3e4; @include flexcenter(both);
+        border-radius: 5px;cursor: pointer; font-weight: 500;
+        img{width: 100px;}
+      }
+      input:checked{
+        + label{background-color: color(500); color:color(50);}
+      }
+
+    }
+    .noticeBox {
+      background-color: #fff7f5;
+      border: 2px solid #ff634914;
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+      border-radius: 4px;
+      p{color:color(100);}
+    }
+    &_cardType{
+       input{display: none;}
+        label{
+          padding:5px 10px;background-color: color(50); @include flexcenter(both);
+          border-radius: 5px;cursor: pointer; box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);
+          border:2px solid transparent; transition: all 0.5s;
+          img{width: 45px;}
+        }
+        input:checked{
+          + label{border-color:color(500);}
+        }
+    }
+    .card{
+      font-size: 14px; background-color: #f3f3f3;
+    }
+  } 
 }

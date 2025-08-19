@@ -1,6 +1,6 @@
 import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
 import { Input } from "../../../components/Frontend";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import frontendRouteMap from "../../../routes/Frontend/frontendRouteMap";
 import Image from "../../../components/CommonElement/Image";
 export default function Login(){
@@ -71,7 +71,7 @@ export default function Login(){
                                             <Link to={frontendRouteMap.FORGOTPASSWORD.path} className="text-4 link-primary">Forgot password?
                                             </Link>
                                         </div>
-                                        <Button variant="primary" className="mt-3 w-100">
+                                        <Button as={Link} to={frontendRouteMap.HOME.path} variant="primary" className="mt-3 w-100">
                                             Login
                                         </Button>
                                         <p className="text-4 text-center mt-3">

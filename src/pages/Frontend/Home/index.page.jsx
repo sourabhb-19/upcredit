@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import { Col, Container, Modal, Row } from "react-bootstrap";
-import frontendRouteMap from "../../../routes/Frontend/frontendRouteMap";
-import { Link } from "react-router-dom";
-import { Image } from "../../../components/CommonElement";
-// Import Swiper React components
-
+import React, { useEffect, useState } from "react";
+import {  Modal} from "react-bootstrap";
 import CreditScore from "./CreditScore";
 import MoneyBack from "./MoneyBack";
-import FinancialFeture from "./FinancialFeture";
 import Blog from "./Blog";
 import Banner from "./banner";
 import FinancialHealth from "./FinancialHealth";
 import Struggle from "./Struggle";
 import Reviews from "./Reviews";
 import StepsProcess from "./StepsProcess";
+import 'aos/dist/aos.css';
+import Aos from "aos";
+import { GetFinancial } from "../../../components";
 
 
 function UserHome() {
@@ -21,6 +18,10 @@ function UserHome() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);   
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
 
     return (
         <>
@@ -39,8 +40,8 @@ function UserHome() {
                 <CreditScore/>
                 {/* money back */}
                 <MoneyBack/>
-                {/* financial feture */}
-                <FinancialFeture/>
+                {/* get financial feture */}
+                <GetFinancial/>
                 {/* blog */}
                 <Blog/>
             </main>
@@ -55,7 +56,6 @@ function UserHome() {
                 <Modal.Body className="p-0" bg="transparent">
                     <iframe width="100%" height="500px" src="https://www.youtube.com/embed/nB8JOUEsQVs"  frameBorder="0"  allowFullScreen></iframe>
                 </Modal.Body>
-                
             </Modal>
         </>
     );

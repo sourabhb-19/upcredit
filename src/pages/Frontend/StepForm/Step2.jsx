@@ -8,8 +8,10 @@ export default function Step2({ handleNextStep }) {
     const [selectedDate, setSelectedDate] = useState(null);
   return (
     <>
-        <h5>Verification Information - All Fields Required.</h5>
-        <p>All information you provide is transmitted over a safe and secure connection.</p>
+        <div className="stepForm_head">
+            <div className="title fw-bold">Verification Information - All Fields Required.</div>
+            <p>All information you provide is transmitted over a safe and secure connection.</p>
+        </div>
         <Row>
             <Col md={6}>
                <Form.Group >

@@ -6,6 +6,8 @@ const frontendRouteMap = {
   STEPFORM: { path: `${baseRoutes.userBaseRoutes}/step-form`},
   FORGOTPASSWORD: { path: `${baseRoutes.userBaseRoutes}/forgot-password`},
   HOME: { path: `${baseRoutes.userBaseRoutes}/home`},
+  PRICING: { path: `${baseRoutes.userBaseRoutes}/pricing`},
+  REVIEWS: { path: `${baseRoutes.userBaseRoutes}/reviews`},
   COMPONENTPREVIEW: { path: `${baseRoutes.userBaseRoutes}/component-preview`},
 };
 export default frontendRouteMap;

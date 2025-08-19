@@ -6,7 +6,7 @@ function FrontendPrivateLayout() {
   return (
       <div>
             <Header />
-            <Outlet />
+            <Outlet />     
             <Footer/>
       </div>
   );

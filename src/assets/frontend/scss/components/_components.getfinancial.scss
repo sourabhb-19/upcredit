@@ -1,0 +1,35 @@
+@use "../settings" as *;
+
+.financialFeture{
+    background-color: #F8F9FA;
+    position: relative;z-index: 1;
+    &_tag{
+        background-color: color(700); padding:5px 10px;
+        border-radius: 5px;font-size: 14px;color:color(900);
+    }
+    &_shape{
+        position: relative;
+        &::before{
+            position: absolute;
+            width: calc(100% - 50px);
+            height: calc(100% - 100px);
+            left: 0;
+            bottom: 20px;
+            background: radial-gradient(ellipse at center, color(50) 0%, color(500) 100%);
+            content: "";
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    img{height: 500px;}
+
+    @include media-breakpoint-down(lg){
+        img{height: 400px;}
+    }
+    @include media-breakpoint-down(md){
+        .commonHeading{text-align: center;}
+    }
+    @include media-breakpoint-down(sm){
+        &_tag{font-size: 12px;}
+    }
+} 

@@ -5,5 +5,7 @@ export const SignUp = React.lazy(() => import("./SignUp/index.page"));
 export const StepForm = React.lazy(() => import("./StepForm/index.page"));
 export const ForgotPassword = React.lazy(() => import("./ForgotPassword/index.page"));
 export const UserHome = React.lazy(() => import("./Home/index.page"));
+export const Pricing = React.lazy(()=> import("./Pricing/index.page"))
+export const Reviews = React.lazy(()=> import("./Reviews/index.page"))
 export const ComponentPreview = React.lazy(() => import("./ComponentPreview/index.page"));
 

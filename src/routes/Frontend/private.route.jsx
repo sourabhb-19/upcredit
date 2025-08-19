@@ -1,4 +1,4 @@
-import { ComponentPreview, UserHome } from "../../pages";
+import { ComponentPreview, Pricing, Reviews, UserHome } from "../../pages";
 import frontendRouteMap from "./frontendRouteMap";
 
 export default function route() {
@@ -7,6 +7,16 @@ export default function route() {
       path: frontendRouteMap.HOME.path,
       name: "Home",
       element:<UserHome />,
+    },
+    {
+      path: frontendRouteMap.PRICING.path,
+      name: "Pricing",
+      element:<Pricing />,
+    },
+    {
+      path: frontendRouteMap.REVIEWS.path,
+      name: "Reviews",
+      element:<Reviews />,
     },
     {
       path: frontendRouteMap.COMPONENTPREVIEW.path,

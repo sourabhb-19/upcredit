@@ -10,8 +10,10 @@ export default function Step1({ handleNextStep }) {
         ];
   return (
     <>
-        <h5>Jhon Mart, Let's get started by finding your Credit Profile</h5>
-        <p>Fill out the form below to set up your account and get access to 3-Bureau monitoring!</p>
+        <div className="stepForm_head">
+            <div className="title fw-bold">Jhon Mart, Let's get started by finding your Credit Profile</div>
+            <p>Fill out the form below to set up your account and get access to 3-Bureau monitoring!</p>
+        </div>
         <Row>
             {/* First Name */}
             <Col md={6}>
@@ -102,8 +104,7 @@ export default function Step1({ handleNextStep }) {
             </Col>
             
         </Row>
-        <Button variant="primary" onClick={handleNextStep}>Continue</Button>
-       
+        <Button variant="primary" onClick={handleNextStep}>Continue</Button>       
       </>
   );
 }
