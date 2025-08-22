@@ -1,0 +1,21 @@
+
+@use "../settings" as *;
+// faq
+    .faq{
+        .accordion{
+            max-width: 800px;border: 0;border-radius: 0;
+            &-item{
+                border-left: 0;border-right: 0;
+            }
+            &-button{
+                &:focus{box-shadow: none;}
+                &:not(.collapsed){
+                    background-color: transparent;color:color(500);
+                    box-shadow: none;
+                }
+            }
+            &-body{
+                color:color(100);padding-left: 35px;
+            }
+        }
+    }

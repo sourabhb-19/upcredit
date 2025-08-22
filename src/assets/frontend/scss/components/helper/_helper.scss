@@ -46,6 +46,9 @@ a {
 }
 
 .fs-14{font-size: 14px;}
+.bg-light{
+    background-color: #F8F9FA !important;
+}
 
 .link-primary {
   color: color(500) !important;
@@ -125,5 +128,11 @@ a {
   @include media-breakpoint-down(md){
     margin-bottom: 20px;
     &_title{font-size: 24px; margin-bottom: 0;}
+  }
+}
+
+.staticPage{
+  .content{
+    p{line-height: 1.6; color:color(100);}
   }
 }

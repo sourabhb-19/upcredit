@@ -1,0 +1,16 @@
+@use "../settings" as *;
+
+.blogPage{
+    // blog listing
+    .blogListing{
+        background-color: color(80);
+        .nav{
+            &-link{
+                color:color(800); border-radius: 5px;padding:8px 20px;
+                &.active{
+                    background-color: #ffe0d9;color:color(500);
+                }
+            }
+        }
+    }
+}

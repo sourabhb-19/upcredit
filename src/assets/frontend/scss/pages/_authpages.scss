@@ -110,7 +110,9 @@
 
         .connectBeast{
             .custom-card {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 text-align: center;
                 padding: 20px;
                 border-radius: 8px;

@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Image } from "../../../CommonElement";
+import frontendRouteMap from "../../../../routes/Frontend/frontendRouteMap";
 
 export function Footer() {
     const year = new Date().getFullYear();
@@ -17,10 +18,10 @@ export function Footer() {
                                         <h4>App Links</h4>
                                     </div>
                                     <ul className="list-unstyled box-menu tf-collapse-content">
-                                        <li><Link to="#!">Log In</Link></li>
-                                        <li><Link to="#!">Sign Up</Link></li>
-                                        <li><Link to="#!">Help & Support</Link></li>
-                                        <li><Link to="#!">Training</Link></li>
+                                        <li><Link to={frontendRouteMap.LOGIN.path}>Log In</Link></li>
+                                        <li><Link to={frontendRouteMap.SIGNUP.path}>Sign Up</Link></li>
+                                        <li><Link to={frontendRouteMap.HELPANDSUPPORT.path}>Help & Support</Link></li>
+                                        <li><Link to={frontendRouteMap.TRAINING.path}>Training</Link></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -32,11 +33,11 @@ export function Footer() {
                                         <h4>Helpful Links</h4>
                                     </div>
                                     <ul className="list-unstyled box-menu tf-collapse-content">
-                                        <li><Link to="#!">Pricing</Link></li>
+                                        <li><Link to={frontendRouteMap.PRICING.path}>Pricing</Link></li>
                                         <li><Link to="#!">How It Works</Link></li>
-                                        <li><Link to="#!">Reviews</Link></li>
-                                        <li><Link to="#!">110% Money-Back Guarantee</Link></li>
-                                        <li><Link to="#!">Blog</Link></li>
+                                        <li><Link to={frontendRouteMap.REVIEWS.path}>Reviews</Link></li>
+                                        <li><Link to={frontendRouteMap.MONEYBACKGUARANTEE.path}>100% Money-Back Guarantee</Link></li>
+                                        <li><Link to={frontendRouteMap.BLOG.path}>Blog</Link></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -84,8 +85,8 @@ export function Footer() {
                             <p className=" mb-0">© {year} UPCREDIT. All rights reserved.</p>
                             <ul className="list-unstyled d-flex  mb-0">
                                 <li className="mx-md-2 mx-1"><Link to="#!">Security</Link></li>
-                                <li className="mx-md-2 mx-1"><Link to="#!">Privacy Policy</Link></li>
-                                <li className="mx-md-2 mx-1"><Link to="#!">Terms of Service</Link></li>
+                                <li className="mx-md-2 mx-1"><Link to={frontendRouteMap.PRIVACY.path}>Privacy Policy</Link></li>
+                                <li className="mx-md-2 mx-1"><Link to={frontendRouteMap.TERMS.path}>Terms of Service</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -61,17 +61,17 @@ export default function Pricing (){
         {
             "icon": "bi bi-people", 
             "title": "Open to Everyone",
-            "description": "Dispute Beast is committed to ensuring that its credit analysis and disputing tools are easily accessible for everyone, irrespective of their technical or financial background. It is our goal to break down barriers in financial services, ensuring that solutions are inclusive and can be utilized by every consumer to manage their credit more effectively."
+            "description": "Upcredit is committed to ensuring that its credit analysis and disputing tools are easily accessible for everyone, irrespective of their technical or financial background. It is our goal to break down barriers in financial services, ensuring that solutions are inclusive and can be utilized by every consumer to manage their credit more effectively."
         },
         {
             "icon": "bi bi-book",
             "title": "Empowering & Educational",
-            "description": "By providing comprehensive knowledge and tools for understanding and managing credit, Dispute Beast empowers consumers to make informed financial decisions. This commitment to financial literacy is a cornerstone of helping users lead a more affordable lifestyle through better credit management."
+            "description": "By providing comprehensive knowledge and tools for understanding and managing credit, Upcredit empowers consumers to make informed financial decisions. This commitment to financial literacy is a cornerstone of helping users lead a more affordable lifestyle through better credit management."
         },
         {
             "icon": "bi bi-shield-check",
             "title": "Transparency & Trust",
-            "description": "Dispute Beast upholds a commitment to transparency in all its operations. This principle is fundamental in building trust with consumers, as it ensures clarity in how their credit information is analyzed and disputed, making the process understandable and secure. We are SOC Compliant."
+            "description": "Upcredit upholds a commitment to transparency in all its operations. This principle is fundamental in building trust with consumers, as it ensures clarity in how their credit information is analyzed and disputed, making the process understandable and secure. We are SOC Compliant."
         }
     ]
 
@@ -127,7 +127,7 @@ export default function Pricing (){
                         <Col>
                             <div className="creditMonitoring_wrap h-100">
                                 <h3>Having great credit shouldn’t be that hard, with the Beast it’s easy.</h3>
-                                <p>Our proprietary Dispute Beast AI engine has processed over half a million letters to dispute items on consumer’s accounts.</p>
+                                <p>Our proprietary Upcredit AI engine has processed over half a million letters to dispute items on consumer’s accounts.</p>
                                  <div className="feature mt-4">
                                     {features.map((item, index) => (
                                         <div className="feature-box  d-flex align-items-center" key={index}>
@@ -145,11 +145,11 @@ export default function Pricing (){
                         </Col>
                     </Row>
                 </section>
-                {/*  Dispute Beast */}
+                {/*  Upcredit */}
                 <section className="disputeBeast">
                     <Container>
                         <div className="commonHeading text-center">
-                            <h2 className="commonHeading_title text-dark">What you get with <span>Dispute Beast</span></h2>
+                            <h2 className="commonHeading_title text-dark">What you get with <span>Upcredit</span></h2>
                         </div>
                         <Row>
                             {features.map((item, index) => (
@@ -196,11 +196,11 @@ export default function Pricing (){
                             className="img-fluid"
                         />
                         <h2 className="commonHeading_title text-dark">
-                            Dispute Beast <span>110% Money-Back Guarantee</span>
+                            Upcredit <span>100% Money-Back Guarantee</span>
                         </h2>
-                        <p>
+                        <p className="commonHeading_cnt">
                             We believe in the quality of our products. If you’re not satisfied,
-                            we will return 110% (yes, 110!) <br className="d-none d-md-block" /> back of your money if Dispute Beast
+                            we will return 100% (yes, 100!) <br className="d-none d-md-block" /> back of your money if Upcredit
                             doesn’t help you improve your credit after a year.
                         </p>
                         </div>

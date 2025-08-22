@@ -6,22 +6,22 @@ export default function StepsProcess(){
     const steps = [
         {
         number: 1,
-        title: "Sign up for Monitoring & get your Free Dispute Beast account",
+        title: "Sign up for Monitoring & get your Free Upcredit account",
         desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 2,
-        title: "Sign up for Monitoring & get your Free Dispute Beast account",
+        title: "Sign up for Monitoring & get your Free Upcredit account",
         desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 3,
-        title: "Sign up for Monitoring & get your Free Dispute Beast account",
+        title: "Sign up for Monitoring & get your Free Upcredit account",
         desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 4,
-        title: "Sign up for Monitoring & get your Free Dispute Beast account",
+        title: "Sign up for Monitoring & get your Free Upcredit account",
         desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         }
     ];
@@ -32,7 +32,7 @@ export default function StepsProcess(){
                     <div className="commonHeading text-center md-4 mb-md-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
                         <h2 className="commonHeading_title">Start your <span>DIY process</span> in just 5 minutes</h2>
                         <p className="commonHeading_cnt mb-0 text-white">
-                            When you’re enrolled with Beast Monitoring partner service, using Dispute Beast is entirely free to dispute letters. <br className="d-none d-md-block" /> We’re offering an entirely new & automated disputing solution to improve your scores.
+                            When you’re enrolled with Beast Monitoring partner service, using Upcredit is entirely free to dispute letters. <br className="d-none d-md-block" /> We’re offering an entirely new & automated disputing solution to improve your scores.
                         </p>
                         <Link to={frontendRouteMap.SIGNUP.path} className='btn btn-primary mt-3'>Get started</Link>
                     </div>

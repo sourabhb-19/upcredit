@@ -39,11 +39,11 @@ export default function MoneyBack() {
               className="img-fluid"
             />
             <h2 className="commonHeading_title text-dark">
-              Dispute Beast <span>110% Money-Back Guarantee</span>
+              Upcredit <span>100% Money-Back Guarantee</span>
             </h2>
-            <p>
+            <p className="commonHeading_cnt">
               We believe in the quality of our products. If you’re not satisfied,
-              we will return 110% (yes, 110!) <br className="d-none d-md-block" /> back of your money if Dispute Beast
+              we will return 100% (yes, 100!) <br className="d-none d-md-block" /> back of your money if Upcredit
               doesn’t help you improve your credit after a year.
             </p>
           </div>

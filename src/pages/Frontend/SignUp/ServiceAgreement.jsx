@@ -8,16 +8,16 @@ export default function ServiceAgreement({ handleStepChange }) {
         <div className="serviceAgreenment">
             <h2 className="text-7 ">Service Agreement</h2>
              <p className="text-muted mb-4 fs-14">
-                By signing below, I hereby agree and consent to Dispute Beast Terms and
+                By signing below, I hereby agree and consent to Upcredit Terms and
                 Services and Privacy Policy. Please view, print, or save the documents
                 linked below:
             </p>
             <ul className="list-unstyled mb-4">
                 <li className='mb-2'>
-                    <Link to={"#!"} className="link-primary ">Dispute Beast App Terms of Service</Link>
+                    <Link to={"#!"} className="link-primary ">Upcredit App Terms of Service</Link>
                 </li>
                 <li>
-                    <Link to={"#!"} className="link-primary">Dispute Beast App Privacy Policy</Link>
+                    <Link to={"#!"} className="link-primary">Upcredit App Privacy Policy</Link>
                 </li>
             </ul>
             <FormGroup className="form-group">

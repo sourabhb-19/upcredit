@@ -18,11 +18,19 @@ function UserHome() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);   
+const enableAOS = false; // 👈 screenshot ke liye false kar do
 
-    useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, []);
-
+  useEffect(() => {
+    if (enableAOS) {
+      Aos.init({ duration: 1000 });
+    } else {
+      // sabhi elements ko visible kar do
+      document.querySelectorAll("[data-aos]").forEach((el) => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      });
+    }
+  }, [enableAOS]);
     return (
         <>
             <main className="homePage">

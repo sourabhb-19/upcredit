@@ -20,7 +20,7 @@
                 left: 0;    
                 transition: width 0.3s ease;
             }
-            &:hover{
+            &:hover, &.active{
                 color: color(500);
                 &::before{
                     width: 30px;
@@ -47,8 +47,11 @@
                 &:focus{box-shadow: none;}
             }
             &-nav{padding-top: 10px;}
-            .nav-link:not(:last-child){
-                margin-right: 0;margin-bottom: 5px;
+            .nav-link{
+                &:not(:last-child){
+                    margin-right: 0;margin-bottom: 5px;
+                }
+                &:hover, &.active{&:before{display: none;}}
             }
         }
         &_action{

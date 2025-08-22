@@ -2,9 +2,6 @@
 @use "../settings" as *;
 
 .homePage{
-    .bg-light{
-        background-color: #EFEBE7;
-    }
     // banner
     .banner{
         background: url(#{$imageurl}/banner.jpg) no-repeat center center;
@@ -346,34 +343,5 @@
     //     }
     // } 
     
-    // blog
-    .blogSec{
-        &_card{
-            background-color: color(50);
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.06);
-            img{border-radius: 5px;}
-            .category{font-size: 16px;font-weight: 500; color:color(500); margin:15px 0;}
-            .title{
-                font-size: 20px; margin-bottom: 8px;
-                display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 2;
-                overflow: hidden;
-            }
-            p{color:color(100);display: -webkit-box;  -webkit-box-orient: vertical;  
-                -webkit-line-clamp: 4; overflow: hidden;}
-            a{
-                em{line-height: 1; margin-left: 5px; transition: all 0.5s;}
-                &:hover{
-                    em{margin-left: 10px;}
-                }
-            }
-        }
-        @include media-breakpoint-down(lg){
-            &_card{
-                padding:15px;
-                .title{font-size: 18px;}
-            }
-        }
-    }
+   
 }

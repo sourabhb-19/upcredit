@@ -1,0 +1,63 @@
+@use "../settings" as *;
+
+.training{
+    // next training
+    .nextTraining{
+        &_wrap{
+            max-width: 700px; background-color: color(800);
+            padding:60px 40px; border-radius: 5px;
+            label{color:color(50)}
+            input{background-color: #282828; border-color: #3c3b3b; color:color(500);}
+            .form-check-label{
+                color:color(50);
+                &:before{
+                    background-color: #282828; border-color: #3c3b3b;
+                }
+            }
+        }
+    }
+
+    // steps process
+    .stepsProcess{
+        background-color: color(900);
+        &_card{
+            .number{font-size: 80px; -webkit-text-stroke-width: 0.5px;line-height: 0.8;
+                  -webkit-text-stroke-color: #606064; color:color(900);margin-bottom: 15px;}
+            h3{color:color(500);}
+            p{color:#aba5a5;line-height: 1.5;margin-bottom: 30px;}
+        }
+        .row{
+            &:before{
+                content: "";
+                width: calc(100% - 30px);
+                height: 1px;
+                background-color: #292828;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:after{
+                content: "";
+                width: 1px;
+                height: calc(100% - 30px);
+                background-color: #292828;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        @include media-breakpoint-down(md){
+            &_card{
+                padding:0 !important;text-align:center;
+                p{margin-bottom: 0;}
+            }
+            .row{
+                &::before, &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

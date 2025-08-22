@@ -34,13 +34,13 @@ export default function ConnectBeast({ handleStepChange }) {
                 <Alert variant="light" className="border-primary text-start">
                     <div className="fw-bold text-primary mb-1">
                     <i className="bi bi-info-circle me-2"></i>
-                    Are you new to Dispute Beast?
+                    Are you new to Upcredit?
                     </div>
                     <div className="fs-14">
-                    If you just signed up for Dispute Beast today, you most probably DO
+                    If you just signed up for Upcredit today, you most probably DO
                     NOT have a Beast Credit Monitoring account yet, please sign up now to
                     get started. Beast Credit Monitoring is required in order to generate
-                    letters and attack items using Dispute Beast’s AI. Sign up or enter
+                    letters and attack items using Upcredit’s AI. Sign up or enter
                     credentials below.
                     </div>
                 </Alert>

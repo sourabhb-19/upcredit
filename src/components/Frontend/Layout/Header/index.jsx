@@ -1,37 +1,102 @@
 import React from "react";
-import { Container, Navbar, Nav  } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom"; // use NavLink
 import Image from "../../../CommonElement/Image";
 import frontendRouteMap from "../../../../routes/Frontend/frontendRouteMap";
 
 export function Header() {
-  return (   
-    <header className="header w-100" >           
-        <Navbar expand="lg" bg="transparent" data-bs-theme="light" > 
-            <Container fluid>           
-                <Navbar.Brand className="me-0 me-md-4">
-                    <Link to={frontendRouteMap.HOME.path} as={Nav.link} >
-                        <Image source="logo.png" alt="Logo" className="img-fluid" imageFor="frontend" />    
-                    </Link>
-                </Navbar.Brand>
-                <div className="ms-auto d-flex align-items-center header_action order-lg-2">
-                    <Link to={frontendRouteMap.LOGIN.path} className="nav-link ">Login</Link>
-                    <Link  to={frontendRouteMap.SIGNUP.path} className="btn btn-primary">Get Started</Link>
-                </div>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className="order-lg-1">
-                    <Nav>
-                        <Link to="#!" className="nav-link">Pricing</Link>
-                        <Link to="#!" className="nav-link">Reviews</Link>
-                        <Link to="#!" className="nav-link">Money-Back Guarantee</Link>
-                        <Link to="#!" className="nav-link">Help & Support</Link>
-                        <Link to="#!" className="nav-link">Training</Link>
-                        <Link to="#!" className="nav-link">Blog</Link>                       
-                    </Nav>
-                </Navbar.Collapse>  
-                
-            </Container>          
-        </Navbar>          
-    </header>   
+  return (
+    <header className="header w-100">
+      <Navbar expand="lg" bg="transparent" data-bs-theme="light">
+        <Container fluid>
+          {/* Logo */}
+          <Navbar.Brand className="me-0 me-md-4">
+            <NavLink to={frontendRouteMap.HOME.path} className="nav-link p-0">
+              <Image
+                source="logo.png"
+                alt="Logo"
+                className="img-fluid"
+                imageFor="frontend"
+              />
+            </NavLink>
+          </Navbar.Brand>
+
+          {/* Right side actions */}
+          <div className="ms-auto d-flex align-items-center header_action order-lg-2">
+            <NavLink
+              to={frontendRouteMap.LOGIN.path}
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Login
+            </NavLink>
+            <NavLink
+              to={frontendRouteMap.SIGNUP.path}
+              className={({ isActive }) =>
+                isActive ? "btn btn-primary active" : "btn btn-primary"
+              }
+            >
+              Get Started
+            </NavLink>
+          </div>
+
+          {/* Menu Toggle */}
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" className="order-lg-1">
+            <Nav>
+              <NavLink
+                to={frontendRouteMap.PRICING.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Pricing
+              </NavLink>
+              <NavLink
+                to={frontendRouteMap.REVIEWS.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Reviews
+              </NavLink>
+              <NavLink
+                to={frontendRouteMap.MONEYBACKGUARANTEE.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Money-Back Guarantee
+              </NavLink>
+              <NavLink
+                to={frontendRouteMap.HELPANDSUPPORT.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Help & Support
+              </NavLink>
+              <NavLink
+                to={frontendRouteMap.TRAINING.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Training
+              </NavLink>
+              <NavLink
+                to={frontendRouteMap.BLOG.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Blog
+              </NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   );
 }

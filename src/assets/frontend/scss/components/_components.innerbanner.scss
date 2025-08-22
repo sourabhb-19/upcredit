@@ -16,10 +16,40 @@
     }
     .commonHeading_title{font-size: 60px;}
     .commonHeading_cnt{font-size: 18px;}
+    &_video{
+        color: color(50); transition: all 0.5s;
+        em{  font-size: 22px;vertical-align: middle;margin-right: 5px;    }
+        &:hover{color:color(500);}
+    }
     &-pricing{
         background-image: url(#{$imageurl}/pricing-banner.webp); 
     }
     &-reviews{
         background-image: url(#{$imageurl}/reviews-banner.webp); 
+    }
+    &-moneyback{
+        background-image: url(#{$imageurl}/moneyback-banner.webp); 
+    }
+    &-helpandsupport{
+        background-image: url(#{$imageurl}/helpandsupport-banner.webp); 
+        background-position: top;
+    }
+    &-training{
+        background-image: url(#{$imageurl}/training-banner.webp);
+        background-position: left -50px;
+    }
+    &-blog{
+        background-image: url(#{$imageurl}/blog-banner.webp); 
+    }
+    &-contactus{
+        background-image: url(#{$imageurl}/contactus-banner.webp); 
+        background-position: top;
+    }
+    &-terms{
+        background-image: url(#{$imageurl}/terms-banner.webp); 
+    }
+    &-privacy{
+        background-image: url(#{$imageurl}/privacy-banner.webp); 
+        background-position: top;
     }
 }

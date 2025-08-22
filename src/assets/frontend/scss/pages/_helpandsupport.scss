@@ -1,0 +1,47 @@
+@use "../settings" as *;
+
+.helpandSupport{
+
+    // info
+    .info{
+        &Card{
+            padding: 0 30px;
+            &_title{font-size: 24px;}
+            em{font-size: 30px;color:color(500);}
+            p{color:color(100);}
+        }
+    }
+    // credit gudies
+    .creditGuides{
+        &_card{
+            min-height: 250px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding:60px;
+            .title{font-size: 24px;}
+            p{color:color(100); margin:20px 0;}
+            a{
+                em{line-height: 1; margin-left: 5px; transition: all 0.5s;}
+                &:hover{
+                    em{margin-left: 10px;}
+                }
+            }
+        }
+    }
+
+    // contact us
+    .contactUs{
+        &_wrap{
+            background: url("#{$imageurl}/contact-bg.webp") no-repeat;
+            height: 350px;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        li{
+            color:#d4d1d1; font-size: 14px;
+            + li{margin-top: 5px;}
+        }
+    }
+
+}

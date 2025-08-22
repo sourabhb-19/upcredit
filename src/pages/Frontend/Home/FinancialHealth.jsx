@@ -10,7 +10,7 @@ export default function FinancialHealth(){
                         <h2 className="commonHeading_title text-dark">
                             Equipping you with the ability to <br className="d-none d-md-block" /> take full control of <span>your Financial health</span>
                         </h2>
-                        <p className="commonHeading_cnt">At Dispute Beast, we aim to be more than just another app. We strive to become <br className="d-md-block d-none" /> your trusted partner in your pocket, dedicated to improving your financial well-being.</p>
+                        <p className="commonHeading_cnt">At Upcredit, we aim to be more than just another app. We strive to become <br className="d-md-block d-none" /> your trusted partner in your pocket, dedicated to improving your financial well-being.</p>
                     </div>
                     <div className="financialHealth_fullsec d-flex align-items-center justify-content-between gap-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-easing="linear">
                         <h2 className="text-white mb-0">AI that helps you take control of your Credit & financial future</h2>

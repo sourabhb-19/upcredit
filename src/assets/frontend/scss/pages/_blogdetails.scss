@@ -1,0 +1,37 @@
+@use "../settings" as *;
+
+.blogDetails{
+
+    // blog content
+    .blogContent{
+        &_img{
+            max-height: 400px; border-radius: 10px; overflow: hidden; margin:20px 0;
+            img{width: 100%; height: 100%; object-fit: cover;}
+        }
+        &_tag{background-color: color(500);color:color(50);  position: absolute; top:20px;
+            left:20px;font-size: 14px; padding:5px 10px; border-radius: 5px; display: inline-block;
+        }
+        p{ line-height: 1.5;}
+        a{color:color(500); &:hover{color:rgba(color(500), 0.5);}}
+        &_note{
+          background-color: #fff2f0;padding:30px; margin-bottom: 20px;
+          color:color(100); border-left:4px solid color(500); border-radius: 5px;
+        }
+        &_footer{
+            border-top: 1px solid #ecebeb; margin-top: 20px;padding-top: 20px;
+            .socialMedia{
+                &_icon{
+                    font-size: 20px; color:color(100);
+                    &:not(:last-child){margin-right: 10px;}
+                    &:hover{
+                         &.facebook{color:#3B5998;}
+                        &.whatsapp{color:#25D366;}
+                        &.twitter{color:color(900);}
+                        &.reddit{color:#FF4500;}
+                    }
+                }
+            }
+        }
+    }
+
+}

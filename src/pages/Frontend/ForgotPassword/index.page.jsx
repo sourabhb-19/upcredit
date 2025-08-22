@@ -2,6 +2,7 @@ import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
 import { Input } from "../../../components/Frontend";
 import { Link } from "react-router-dom";
 import frontendRouteMap from "../../../routes/Frontend/frontendRouteMap";
+import { Image } from "../../../components";
 export default function ForgotPassword(){
     return (
         <>
@@ -15,7 +16,7 @@ export default function ForgotPassword(){
                                     <Row className="g-0">
                                         <Col xs={10} lg={9} className="mx-auto">
                                         <div className="logo my-3 my-lg-5 text-white">
-                                            Logo
+                                            <Image source="logo-white.png" alt="Logo" className="img-fluid" imageFor="frontend" />    
                                         </div>
                                         </Col>
                                     </Row>
@@ -23,9 +24,9 @@ export default function ForgotPassword(){
                                     {/* Content Row */}
                                     <Row className="g-0 my-auto">
                                         <Col xs={10} lg={9} className="mx-auto">
-                                        <h1 className="text-11 text-white mb-2 mb-md-4">Dispute Beast 110% <br /> Money Back Guarantee</h1>
+                                        <h1 className="text-11 text-white mb-2 mb-md-4">Upcredit 100% <br /> Money Back Guarantee</h1>
                                         <p className="text-4 text-white lh-base mb-2 mb-lg-5">
-                                            We believe in the quality of our products. If you're not satisfied, we will return 110% back of your money if Dispute Beast doesn’t help you improve your credit after a year.
+                                            We believe in the quality of our products. If you're not satisfied, we will return 100% back of your money if Upcredit doesn’t help you improve your credit after a year.
                                         </p>
                                         </Col>
                                     </Row>
