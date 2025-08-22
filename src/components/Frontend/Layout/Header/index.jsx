@@ -11,7 +11,7 @@ export function Header() {
         <Container fluid>
           {/* Logo */}
           <Navbar.Brand className="me-0 me-md-4">
-            <NavLink to={frontendRouteMap.HOME.path} className="nav-link p-0">
+            <NavLink to={frontendRouteMap.HOME.path} className="p-0">
               <Image
                 source="logo.png"
                 alt="Logo"
