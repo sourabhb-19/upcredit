@@ -7,22 +7,22 @@ export default function StepsProcess(){
         {
         number: 1,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 2,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 3,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 4,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         }
     ];
     return(

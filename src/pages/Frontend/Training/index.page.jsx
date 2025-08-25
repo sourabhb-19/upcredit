@@ -15,22 +15,22 @@ export default function Training (){
         {
         number: 1,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 2,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 3,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         },
         {
         number: 4,
         title: "Sign up for Monitoring & get your Free Upcredit account",
-        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $49.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
+        desc: "All you need is active Beast Monitoring, the rest is on us. Monitoring is a monthly subscription that costs $29.99, and provides you with advanced 3-Bureau reports on your credit so you can have a better idea of your financial status."
         }
     ];
 
@@ -52,7 +52,7 @@ export default function Training (){
                     <Container>
                         <div className="commonHeading text-center">
                             <h2 className="commonHeading_title text-dark">Don't miss out on the <span>next Training!</span></h2>
-                            <p className="commonHeading_cnt">Be the first to unlock expert insights and powerful tools with Upcredit. Sign up below to get notified about <br className="d-none d-md-block" />  our next live app training and take one step closer to mastering your credit journey.</p>
+                            <p className="commonHeading_cnt">Be the first to unlock expert insights and powerful tools with Upcredit. Sign up below to get notified about <br className="d-none d-lg-block" />  our next live app training and take one step closer to mastering your credit journey.</p>
                         </div>
                         <div className="nextTraining_wrap mx-auto">
                             <Row className="gx-3">
@@ -66,7 +66,7 @@ export default function Training (){
                                         </div>
                                     </FormGroup>
                                 </Col>
-                                <Col xs={12} lg={6}>
+                                <Col xs={12} md={6}>
                                     <FormGroup className="form-group">
                                         <div className="form-label-group">
                                             <Form.Label>Last Name</Form.Label>
@@ -76,7 +76,7 @@ export default function Training (){
                                         </div>
                                     </FormGroup>
                                 </Col>
-                                <Col xs={12} lg={6}>
+                                <Col xs={12} md={6}>
                                     <FormGroup className="form-group">
                                         <div className="form-label-group">
                                             <Form.Label>Email</Form.Label>
@@ -86,7 +86,7 @@ export default function Training (){
                                         </div>
                                     </FormGroup>
                                 </Col>
-                                <Col xs={12} lg={6}>
+                                <Col xs={12} md={6}>
                                     <FormGroup className="form-group">
                                         <div className="form-label-group">
                                             <Form.Label>Phone</Form.Label>
@@ -118,7 +118,7 @@ export default function Training (){
                         <div className="commonHeading text-center md-4 mb-md-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
                             <h2 className="commonHeading_title">Start your <span>DIY process</span> in just 5 minutes</h2>
                             <p className="commonHeading_cnt mb-0 text-white">
-                                When you’re enrolled with Beast Monitoring partner service, using Upcredit is entirely free to dispute letters. <br className="d-none d-md-block" /> We’re offering an entirely new & automated disputing solution to improve your scores.
+                                When you’re enrolled with Beast Monitoring partner service, using Upcredit is entirely free to dispute letters. <br className="d-none d-lg-block" /> We’re offering an entirely new & automated disputing solution to improve your scores.
                             </p>
                             <Link to={frontendRouteMap.SIGNUP.path} className='btn btn-primary mt-3'>Get started</Link>
                         </div>

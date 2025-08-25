@@ -165,20 +165,20 @@ export default function Step4() {
 
                     <Card className="border-0 mb-4">
                         <Card.Body>
-                            <Row className="text-center align-items-center">
-                                <Col md={4} className="border-end">
+                            <Row className="text-center align-items-center g-3">
+                                <Col sm={4} className="border-end pb-2">
                                     <div className="fw-bold text-primary">
-                                        $49.99 charged on <br /> 8/3/2025
+                                        $29.99 charged on <br /> 8/3/2025
                                     </div>
                                 </Col>
-                                <Col md={4} className="border-end">
+                                <Col sm={4} className="border-end pb-2">
                                     <div>
                                         Monthly Membership for just{" "}
-                                        <span className="fw-bold text-primary">$49.99</span> <br />
+                                        <span className="fw-bold text-primary">$29.99</span> <br />
                                         automatically billed to account
                                     </div>
                                 </Col>
-                                <Col md={4}>
+                                <Col sm={4}>
                                     <div>
                                         For questions or to cancel, call <br />
                                         <a href="tel:8447868060" className="text-primary fw-bold">

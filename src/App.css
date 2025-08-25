@@ -1,0 +1,55 @@
+/* START: Preloader CSS */
+.preloader {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-container,
+.loading {
+  height: 100px;
+  position: relative;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.loading-container {
+  margin: 40px auto;
+}
+
+.loading {
+  border: 2px solid transparent;
+  border-color: transparent #FF6349 transparent #FF6349;
+          animation: rotate-loading 1.5s linear 0s infinite normal;
+          transform-origin: 50% 50%;
+}
+
+.loading-container:hover .loading,
+.loading-container .loading {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#loading-icon {
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 50%;
+  max-width: 66px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

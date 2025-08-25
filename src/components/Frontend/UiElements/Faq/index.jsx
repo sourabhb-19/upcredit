@@ -6,7 +6,7 @@ export function Faq(){
             id: 1,
             question: "Is Upcredit really Free?",
             answer:
-            "Yes! Upcredit is 100% free, but in order to use our AI features you need an active Beast Credit Monitoring subscription which costs 49.99 and provides access to 3-Bureau advanced reports."
+            "Yes! Upcredit is 100% free, but in order to use our AI features, you need an active UpCredit Monitoring subscription, which costs $29.99 and provides access to 3-Bureau reports."
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ export function Faq(){
             id: 4,
             question: "How much can I save vs. using traditional credit repair companies?",
             answer:
-            "If you hire a credit repair company for a year, you could pay anywhere from $1200 to $3000 or more, considering the monthly fees and setup charges. Using Upcredit is free, but credit monitoring will cost you only $49.99 per month."
+            "If you hire a credit repair company for a year, you could pay anywhere from $2,000 to $3,000 or more, considering the monthly fees and setup charges. Using Upcredit is FREE, but credit monitoring will cost you only $29.99 per month."
         },
         {
             id: 5,
@@ -36,10 +36,7 @@ export function Faq(){
             id: 6,
             question: "How does Upcredit mailing work?",
             answer:
-            `After you create your attack in Upcredit, our third-party partner, 
-            <a href="https://sprintmail.io/" target="_blank" rel="noopener noreferrer" class="link-primary"><strong>Sprint Mail</strong></a>, 
-            will handle the mailing process on your behalf. Your letters will be sent via USPS First-Class Mail (does not include tracking), 
-            and you’ll receive an email confirmation once they’re on their way. Additionally, the status inside your Upcredit portal will be updated to reflect this progress.`
+            "After you create your attack in Upcredit, our thirs party partner Letterstream will handle the mailing process on your behalf. Your letters will be sent via USPS First-Class Mail (does not include tracking), and you’ll receive an email confirmation once they’re on their way. Additionally, the status inside your client portal will be updated to reflect this progress."
         },
         {
             id: 7,
@@ -55,7 +52,7 @@ export function Faq(){
                     <h2 className="commonHeading_title text-dark">Frequently <span>asked questions</span></h2>
                     <p className="commonHeading_cnt">Here's what people usually wonder about Upcredit</p>
                 </div>
-                <Accordion defaultActiveKey="0" className="mx-auto">
+                <Accordion defaultActiveKey={['0', '3', '5']} className="mx-auto">
                     {faqData.map((item, index) => (
                         <Accordion.Item eventKey={index.toString()} key={item.id}>
                         <Accordion.Header>{item.question}</Accordion.Header>

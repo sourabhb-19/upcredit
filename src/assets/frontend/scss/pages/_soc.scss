@@ -1,0 +1,33 @@
+@use "../settings" as *;
+
+.securityPage{
+    @include media-breakpoint-down(xl){
+        .creditData_title{font-size: 20px;}
+    }
+    @include media-breakpoint-down(lg){
+        img{width: 80px;}
+    }
+}
+
+.socPage{
+    @include media-breakpoint-down(lg){
+        img{width: 80px; margin-bottom: 5px;}
+    }
+    @include media-breakpoint-down(md){
+        img{width: 60px;}
+    }
+    // question anwser
+    .questionAnwser{
+        &_row{
+            border-radius: 10px;background-color: #F8F9FA;
+            padding:25px;
+            p, li{color:color(100);}
+            &:not(:last-child){margin-bottom: 15px;}
+
+            @include media-breakpoint-down(xl){
+                padding:15px;
+                .title{font-size: 20px;}
+            }
+        }
+    }
+}

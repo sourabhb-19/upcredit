@@ -15,5 +15,6 @@ export const BlogDetails = React.lazy(()=> import("./BlogDetails/index.page"));
 export const ContactUs = React.lazy(()=> import("./ContactUs/index.page"));
 export const Terms = React.lazy(()=> import("./Terms/index.page"));
 export const Privacy = React.lazy(()=> import("./Privacy/index.page"));
-export const ComponentPreview = React.lazy(() => import("./ComponentPreview/index.page"));
+export const Security = React.lazy(()=> import("./Security/index.page"));
+export const Soc = React.lazy(()=> import("./Soc/index.page"));
 

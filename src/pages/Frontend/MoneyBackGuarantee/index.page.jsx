@@ -10,7 +10,7 @@ export default function MoneyBackGuarantee(){
                     <Container className="h-100"    >
                         <div className="commonHeading zindex-1 position-relative text-center mb-0">
                             <h1 className="commonHeading_title">Upcredit 100% <span>Money-Back Guarantee</span></h1>
-                            <p className="commonHeading_cnt text-white mb-3">We believe in the quality of our products. If you’re not satisfied, we will return 100% (yes, 100!) back of your money <br /> if Upcredit doesn’t help you improve your credit after a year.</p>
+                            <p className="commonHeading_cnt text-white mb-3">We believe in the quality of our products. If you’re not satisfied, we will return 100% (yes, 100!) back of your money <br className="d-none d-md-block" /> if Upcredit doesn’t help you improve your credit after a year.</p>
                             <strong className="text-white">View full Terms below</strong>
                         </div>
                     </Container>

@@ -62,9 +62,9 @@ export default function Reviews() {
                 <section className="innerBanner innerBanner-reviews d-flex align-items-center justify-content-center" >
                     <Container className="h-100"    >
                         <div className="commonHeading zindex-1 position-relative text-center">
-                            <h1 className="commonHeading_title">Trusted by thousands <br /> of <span>users</span></h1>
+                            <h1 className="commonHeading_title">Trusted by thousands <br className="d-none d-md-block" /> of <span>users</span></h1>
                             <p className="commonHeading_cnt text-white">We've helped thousands increase their score by hundreds.. That means we've increased <br className="d-none d-md-block" /> probably over a million points total. See the stories for yourself here.</p>
-                            <Link to={frontendRouteMap.SIGNUP.path} className='btn btn-primary mt-4'>Get started</Link>
+                            <Link to={frontendRouteMap.SIGNUP.path} className='btn btn-primary mt-2 mt-lg-4'>Get started</Link>
                         </div>
                     </Container>
                 </section>

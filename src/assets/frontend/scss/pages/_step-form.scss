@@ -36,7 +36,6 @@
 
   &_label {
     margin-left: 6px;
-    margin-right: 10px;
     font-size: 14px;
     color: #6b7280; 
 
@@ -106,4 +105,46 @@
       font-size: 14px; background-color: #f3f3f3;
     }
   } 
+
+  @include media-breakpoint-down(lg){
+    &_header{
+      img{width: 120px;}
+    }
+    &_circle{margin-bottom: 5px;}
+    &_wrapper{
+      flex-direction: column;
+      &:not(:last-child){margin-right: 15px;}
+    }
+    &_line{display: none;}
+    &_content{padding:25px;}
+    &_head{
+      .title{font-size: 22px;}
+    }
+  }
+
+  @include media-breakpoint-down(md){
+    &_row{
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      padding-bottom: 15px;
+    }
+    &_wrapper{white-space: nowrap;}
+    &_circle{width: 22px;height: 22px;font-size: 12px;}
+  }
+
+  @include media-breakpoint-down(sm){
+    &_head{
+      margin-bottom: 20px;
+      .title{font-size: 18px;}
+      h5{font-size: 16px;}
+    }
+    &_content{padding: 15px;}
+     .paymentInfo{
+      .border-end{
+        border-right:0 !important;
+        border-bottom: 1px solid #dee2e6  !important;
+      }
+     }
+  }
+
 }

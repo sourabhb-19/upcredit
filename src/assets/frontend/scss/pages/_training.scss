@@ -14,6 +14,9 @@
                     background-color: #282828; border-color: #3c3b3b;
                 }
             }
+            @include media-breakpoint-down(md){
+                padding:30px 20px;
+            }
         }
     }
 

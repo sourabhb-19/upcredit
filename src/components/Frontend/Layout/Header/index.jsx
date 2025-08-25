@@ -85,14 +85,14 @@ export function Header() {
               >
                 Training
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to={frontendRouteMap.BLOG.path}
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
               >
                 Blog
-              </NavLink>
+              </NavLink> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

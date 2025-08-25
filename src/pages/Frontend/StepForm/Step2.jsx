@@ -3,6 +3,7 @@ import { Button, Col, Form, FormGroup, Row } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import { Input } from "../../../components/Frontend";
 import { Link } from "react-router-dom";
+import frontendRouteMap from "../../../routes/Frontend/frontendRouteMap";
 
 export default function Step2({ handleNextStep }) {
     const [selectedDate, setSelectedDate] = useState(null);
@@ -14,9 +15,9 @@ export default function Step2({ handleNextStep }) {
         </div>
         <Row>
             <Col md={6}>
-               <Form.Group >
+               <Form.Group className="form-group">
                 <Form.Label>Social Security Number <span className="text-danger">*</span></Form.Label>
-                    <Row>
+                    <Row className="g-3">
                         <Col xs={4}>
                             <Input type="text" maxLength="3" />
                         </Col>
@@ -47,7 +48,7 @@ export default function Step2({ handleNextStep }) {
                     </div>
                 </FormGroup>
             </Col>
-            <Col xs={12} className="mt-4 mb-3">
+            <Col xs={12} className="mt-2 mt-md-4 mb-2 mb-md-3">
                 <h6>Create Username & Password</h6>
             </Col>
             <Col md={6}>
@@ -74,8 +75,8 @@ export default function Step2({ handleNextStep }) {
         </Row>
         <p className="small text-muted">
         You understand by clicking on the "Continue" button below, you click to accept and agree
-        to the <Link to={'#!'} className="link-primary">Terms and Conditions</Link>, acknowledge receipt of our{" "}
-        <Link to={'#!'} className="link-primary">Privacy Policy</Link> and agree to its terms, are providing{" "}
+        to the <Link to={frontendRouteMap.TERMS.path} target="_blank" className="link-primary">Terms and Conditions</Link>, acknowledge receipt of our{" "}
+        <Link to={frontendRouteMap.PRIVACY.path} target="_blank" className="link-primary">Privacy Policy</Link> and agree to its terms, are providing{" "}
         <strong>"written instructions"</strong> to obtain your credit profile...
       </p>
 

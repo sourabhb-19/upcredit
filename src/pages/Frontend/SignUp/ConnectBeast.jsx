@@ -11,16 +11,16 @@ export default function ConnectBeast({ handleStepChange }) {
                 </h6>
 
                 {/* Cards */}
-                <Row className="justify-content-center mb-4">
-                    <Col xs={12} md={6} >
+                <Row className="justify-content-center mb-4 g-3">
+                    <Col xs={12} sm={6} >
                     <Link to={frontendRouteMap.STEPFORM.path} className="custom-card primary-card h-100">
                         <div className="card-title">No, I need to Sign Up</div>
                         <div className="card-subtitle">
-                        Sign up for only $49.99/m
+                        Sign up for only $29.99/m
                         </div>
                     </Link>
                     </Col>
-                    <Col xs={12} md={6} >
+                    <Col xs={12} sm={6} >
                     <Link to={frontendRouteMap.LOGIN.path} className="custom-card outline-card h-100">
                         <div className="card-title">Yes, I have an account.</div>
                         <div className="card-subtitle">

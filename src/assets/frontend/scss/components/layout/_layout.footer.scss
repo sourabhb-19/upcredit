@@ -69,14 +69,12 @@
         &-bottom{
             text-align: center;
             ul{justify-content: center; margin-top: 10px;}
+            p, a{font-size: 12px;}
         }
         .rating{
             &-icon:not(:last-child){margin-right: 5px;}
             em{font-size: 14px;}
         }
-    }
-    @include media-breakpoint-down(sm){
-        
     }
 }
 
@@ -104,6 +102,9 @@
                 margin-bottom: 11.5px;
             }
 
+            @include media-breakpoint-down(md){
+                a{font-size: 14px;}
+            }
            
         }
     }

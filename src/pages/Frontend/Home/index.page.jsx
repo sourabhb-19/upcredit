@@ -9,8 +9,8 @@ import Struggle from "./Struggle";
 import Reviews from "./Reviews";
 import StepsProcess from "./StepsProcess";
 import 'aos/dist/aos.css';
-import Aos from "aos";
 import { GetFinancial } from "../../../components";
+import Aos from "aos";
 
 
 function UserHome() {
@@ -18,19 +18,14 @@ function UserHome() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);   
-const enableAOS = false; // 👈 screenshot ke liye false kar do
 
-  useEffect(() => {
-    if (enableAOS) {
-      Aos.init({ duration: 1000 });
-    } else {
-      // sabhi elements ko visible kar do
-      document.querySelectorAll("[data-aos]").forEach((el) => {
-        el.style.opacity = "1";
-        el.style.transform = "none";
+    // aos animation
+    useEffect(() => {
+      Aos.init({
+        duration: 1000,  // animation speed
+        once: true,      // scroll par ek hi baar chale
       });
-    }
-  }, [enableAOS]);
+    }, []);
     return (
         <>
             <main className="homePage">
@@ -51,7 +46,6 @@ const enableAOS = false; // 👈 screenshot ke liye false kar do
                 {/* get financial feture */}
                 <GetFinancial/>
                 {/* blog */}
-                <Blog/>
             </main>
 
             {/* video */}

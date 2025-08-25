@@ -84,7 +84,7 @@ export function Footer() {
                         <div className="d-md-flex justify-content-between align-items-center">
                             <p className=" mb-0">© {year} UPCREDIT. All rights reserved.</p>
                             <ul className="list-unstyled d-flex  mb-0">
-                                <li className="mx-md-2 mx-1"><Link to="#!">Security</Link></li>
+                                <li className="mx-md-2 mx-1"><Link to={frontendRouteMap.SECURITY.path}>Security</Link></li>
                                 <li className="mx-md-2 mx-1"><Link to={frontendRouteMap.PRIVACY.path}>Privacy Policy</Link></li>
                                 <li className="mx-md-2 mx-1"><Link to={frontendRouteMap.TERMS.path}>Terms of Service</Link></li>
                             </ul>

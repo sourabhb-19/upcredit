@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Form, FormGroup } from 'react-bootstrap';
 import { Input } from '../../../components/Frontend';
 import { Link } from 'react-router-dom';
+import frontendRouteMap from '../../../routes/Frontend/frontendRouteMap';
 
 export default function ServiceAgreement({ handleStepChange }) {
     return (
@@ -14,10 +15,10 @@ export default function ServiceAgreement({ handleStepChange }) {
             </p>
             <ul className="list-unstyled mb-4">
                 <li className='mb-2'>
-                    <Link to={"#!"} className="link-primary ">Upcredit App Terms of Service</Link>
+                    <Link to={frontendRouteMap.TERMS.path} target='_blank' className="link-primary ">Upcredit App Terms of Service</Link>
                 </li>
                 <li>
-                    <Link to={"#!"} className="link-primary">Upcredit App Privacy Policy</Link>
+                    <Link to={frontendRouteMap.PRIVACY.path} target="_blank" className="link-primary">Upcredit App Privacy Policy</Link>
                 </li>
             </ul>
             <FormGroup className="form-group">

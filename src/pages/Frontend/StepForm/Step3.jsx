@@ -29,6 +29,7 @@ export default function Step3 ({handleNextStep}){
                                     name="group1"
                                     type={type}
                                     id={`inline-${type}-1`}
+                                    className="mb-2 mb-md-0"
                                 />
                                 <Form.Check
                                     inline

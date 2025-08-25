@@ -10,7 +10,7 @@ export function SelectPicker({options = "",...props}) {
     };
     return (
     <>
-        <Select styles={customStyles} classNames={{menuPortal: () => "formSelect" }} className="formSelect" classNamePrefix="customSelect" menuPortalTarget={document.body} options={options} {...props}/>
+        <Select styles={customStyles} classNames={{menuPortal: () => "formSelect" }} className="formSelect" classNamePrefix="customSelect" menuPortalTarget={document.body} options={options} {...props} />
     </>
     );
 }

@@ -17,5 +17,12 @@
             &-body{
                 color:color(100);padding-left: 35px;
             }
+
+            @include media-breakpoint-down(md){
+                &-button{
+                    padding:10px;font-size: 15px;
+                }
+                &-body{padding: 0 5px 10px; padding-left: 25px;}
+            }
         }
     }

@@ -20,13 +20,13 @@ export default function StepForm() {
   ];
   return (
     <main className="stepForm">
-      <div className="stepForm_header bg-white py-2 mb-4">
+      <div className="stepForm_header bg-white py-2 mb-3 mb-md-4">
         <Container>
           <Image source="logo.png" alt="logo" width="150" imageFor="frontend" />
         </Container>
       </div>
       <Container>
-        <div className="d-flex align-items-center justify-content-center mb-4">
+        <div className="d-flex align-items-center justify-content-lg-center mb-3 mb-md-4 stepForm_row">
         {steps.map((step, index) => (
           <div key={step.number} className="stepForm_wrapper d-flex align-items-center">
             <div

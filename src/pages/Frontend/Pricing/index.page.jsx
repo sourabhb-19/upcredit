@@ -105,7 +105,7 @@ export default function Pricing (){
                 <section className="innerBanner innerBanner-pricing d-flex align-items-center justify-content-center" >
                     <Container className="h-100"    >
                         <div className="commonHeading zindex-1 position-relative text-center">
-                            <h1 className="commonHeading_title">From bad credit to <br/> <span>Beast credit</span></h1>
+                            <h1 className="commonHeading_title">From bad credit to <br className="d-none d-md-block"/> <span>Beast credit</span></h1>
                             <p className="commonHeading_cnt text-white">Lorem Ipsum has been the industry's standard dummy text ever since <br className="d-none d-md-block" />  , scrambled it to make a type specimen book.</p>
                         </div>
                     </Container>
@@ -116,11 +116,11 @@ export default function Pricing (){
                         <div className="commonHeading text-center">
                             <h2 className="commonHeading_title text-dark">All you need is active <span>Credit Monitoring</span>, <br className="d-none d-md-block" /> the rest is on us, for Free.</h2>
                             <p className="commonHeading_cnt">Navigating the financial turbulence caused by credit issues can feel like an uphill battle, but it doesn’t have to be that way.</p>
-                            <p className="commonHeading_cnt">Credit Monitoring is a monthly subscription that costs $49.99, and provides you with advanced reports on your credit so you can have a better idea of your financial status.</p>
+                            <p className="commonHeading_cnt">Credit Monitoring is a monthly subscription that costs $29.99, and provides you with advanced reports on your credit so you can have a better idea of your financial status.</p>
                             <Link to={frontendRouteMap.SIGNUP.path} className='btn btn-primary mt-3'>Get started</Link>
                         </div>
                     </Container>
-                    <Row className="row-cols-2 g-0">
+                    <Row className="row-cols-1 row-cols-lg-2 g-0">
                         <Col>
                             <Image source="credit-monitoring.jpg" alt="credit" className="img-fluid" imageFor="frontend" />
                         </Col>
@@ -151,9 +151,9 @@ export default function Pricing (){
                         <div className="commonHeading text-center">
                             <h2 className="commonHeading_title text-dark">What you get with <span>Upcredit</span></h2>
                         </div>
-                        <Row>
+                        <Row className="g-4">
                             {features.map((item, index) => (
-                                <Col md={3} key={index}>
+                                <Col sm={6} md={3} key={index}>
                                     <div className="feature-box feature-card  text-center h-100">
                                         <div className="icon bg-transparent text-primary w-auto h-auto">
                                             <em className={item.icon}></em>
@@ -172,11 +172,11 @@ export default function Pricing (){
                 <section className="creditScore">
                     <Container>
                         <div className="creditScore_wrap text-center d-flex flex-column justify-content-center px-2">
-                            <div className="commonHeading zindex-1 position-relative mb-0 px-5">
+                            <div className="commonHeading zindex-1 position-relative mb-0 py-2 py-md-0 px-2 px-md-3 px-lg-5">
                                 <Image source="beast-credit-monitoring-logo.webp" width="150"  imageFor="frontend" alt="Beast credit monitoring" className="img-fluid zIndex-2" />
                                 <h2 className="commonHeading_title mt-3 mb-4"><span>Credit Monitoring </span>services <br className="d-none d-lg-block" /> offered by our partner(s):</h2>
                                 <p className="commonHeading_cnt text-white mb-3">
-                                    Credit Monitoring is a monthly subscription that costs $49.99/m, and provides you with advanced 3B reports on your credit so you can have a better idea of your financial status. Navigating the financial turbulence caused by credit issues can feel like an uphill battle, but it doesn’t have to be that way.
+                                    Credit Monitoring is a monthly subscription that costs $29.99/m, and provides you with advanced 3B reports on your credit so you can have a better idea of your financial status. Navigating the financial turbulence caused by credit issues can feel like an uphill battle, but it doesn’t have to be that way.
                                 </p> 
                                 <Link to="https://www.beastcreditmonitoring.com/?_ics=1755580362316&im_ref=~c87-87Z6Y50VWSXZ23S0QHICyqnof9eb6~4UVKLFvrjf~0YSNIFw&_gl=1*11jqpbg*_ga*Nzc1NjY0MDIyLjE3NTQ1NTMzODg.*_ga_32W1FZHBGJ*czE3NTU1ODAzNTYkbzM1JGcxJHQxNzU1NTgwNDg5JGo2MCRsMCRoMjAyMjQ2MzYyNA..*_ga_ER6GKD4LFR*czE3NTU1ODAzNTYkbzM1JGcxJHQxNzU1NTgwNDkwJGo2MCRsMCRoMTcwNTc1OTc1Mw..*_gcl_au*NDc5ODc4ODA2LjE3NTQ1NTMzODg" 
                                 target="_blank" className="link-primary">Learn more about Beast Credit Monitoring</Link>
@@ -271,7 +271,7 @@ export default function Pricing (){
                         <div className="commonHeading ">
                             <h2 className="commonHeading_title text-dark">Our three <span>core principles</span></h2>
                         </div>
-                        <Row>
+                        <Row className="g-3">
                             {
                                 core.map((item, index) => (
                                     <Col key={index} lg={4} className="divider">

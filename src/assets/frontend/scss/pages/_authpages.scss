@@ -167,6 +167,11 @@
     @include media-breakpoint-down(md) {
        &_left{
             height: auto; padding:0 0 30px;
+            .logo{width: 120px;}
+            h1{font-size: 22px;}
+       }
+       &_right{
+
        }
     }
 

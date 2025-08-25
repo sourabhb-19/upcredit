@@ -1,7 +1,7 @@
 import { baseRoutes } from "../../helpers/baseRoutes";
 
 const frontendRouteMap = {
-  LOGIN: { path: `${baseRoutes.userBaseRoutes}/Login`},
+  LOGIN: { path: `${baseRoutes.userBaseRoutes}/login`},
   SIGNUP: { path: `${baseRoutes.userBaseRoutes}/sign-up`},
   STEPFORM: { path: `${baseRoutes.userBaseRoutes}/step-form`},
   FORGOTPASSWORD: { path: `${baseRoutes.userBaseRoutes}/forgot-password`},
@@ -16,6 +16,8 @@ const frontendRouteMap = {
   CONTACTUS: { path: `${baseRoutes.userBaseRoutes}/contact-us`},
   TERMS: { path: `${baseRoutes.userBaseRoutes}/terms`},
   PRIVACY: { path: `${baseRoutes.userBaseRoutes}/privacy`},
+  SECURITY: { path: `${baseRoutes.userBaseRoutes}/security`},
+  SOC: { path: `${baseRoutes.userBaseRoutes}/security/soc-2`},
   COMPONENTPREVIEW: { path: `${baseRoutes.userBaseRoutes}/component-preview`},
 };
 export default frontendRouteMap;

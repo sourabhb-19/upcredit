@@ -7,11 +7,11 @@
     background: color(900);
     border-color: color(900);
     box-shadow: none;
-    height: 40px;
+    height: $field-height;
     padding: 0px 10px;
     &.customSelect__control--is-focused,
     &.customSelect__control--is-focused:hover {
-      border-color: color(900);
+      border-color: color(500); box-shadow: none;
     }
     &:hover {
       border-color: transparent;
@@ -57,16 +57,19 @@
     }
   }
   &__option {
+    font-size: 14px !important;
     &--is-focused {
-      background-color: color(900);
+      background-color: #ffc9c0 !important;
+      color: color(900) !important;
     }
     &--is-selected {
-      background-color: color(900);
-      color: color(900);
+      background-color: color(500) !important;
+      color: color(50) !important;
     }
     &:active {
-      background-color: color(900);
-      color: color(900);
+      
+      background-color: #ffb6a9 !important;
+      color: color(900) !important;
     }
   }
   &__menu {
@@ -85,6 +88,20 @@
   }
   &__indicator-separator {
     display: none;
+  }
+
+  @media (max-width: 1599px){
+    &__control{
+      height: $field-height-xl;
+    }
+    &__value {
+      &-container {font-size: 14px;}
+    }
+  }
+  @include media-breakpoint-down(lg){
+    &__control{
+      height:$field-height-lg; min-height: $field-height-lg;
+    }
   }
 }
 /* select end */
